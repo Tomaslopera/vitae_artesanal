@@ -82,7 +82,7 @@ h1 em,h2 em {font-weight:400;color:var(--clay);font-style:italic}
 .values-strip {background:#e8dbcd}
 .values-content {display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,80px);min-height:84px;text-align:center}
 .values-content span:not(.value-spark) {font-family:var(--serif);font-size:clamp(20px,2.45vw,32px);font-weight:600;font-style:italic;white-space:nowrap}
-.value-spark {font-size:18px;color:var(--clay)}
+.value-spark {display:block;width:17px;height:17px;flex:none;fill:var(--clay)}
 .section {padding:126px 0}
 .about-grid {display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);align-items:center;gap:clamp(38px,8vw,100px)}
 .about-art {min-height:490px;position:relative;background:#dcc4b6;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:220px 220px 4px 4px}
@@ -91,7 +91,7 @@ h1 em,h2 em {font-weight:400;color:var(--clay);font-style:italic}
 .handwritten {font:36px var(--script);color:#875b4d;display:block;transform:rotate(-7deg);margin-bottom:22px}
 .about-art-inner p {font:500 clamp(34px,4vw,58px)/.99 var(--serif);letter-spacing:-.04em}
 .about-art-inner em {font-weight:400}
-.oversize-flower {position:absolute;top:24px;right:22px;font-size:110px;line-height:1;color:rgba(248,242,227,.46)}
+.oversize-flower {position:absolute;top:38px;right:34px;width:76px;height:76px;fill:rgba(248,242,227,.58)}
 .small-flower {position:absolute;bottom:32px;left:45px;font-size:46px;color:#f4e3d0}
 .about-copy {padding:25px 0 25px 0;max-width:520px}
 .about-copy h2,.section-heading h2,.gallery-heading h2 {font-size:clamp(50px,5.25vw,83px);margin-top:22px}
@@ -212,10 +212,13 @@ body.menu-open .whatsapp-float {visibility:hidden}
   .hero-vertical {display:none}
   .values-content {gap:11px;min-height:76px;justify-content:space-between}
   .values-content span:not(.value-spark) {font-size:clamp(16px,4vw,25px)}
-  .value-spark {font-size:12px}
+  .value-spark {width:13px;height:13px}
   .section {padding:79px 0}
   .about-grid {display:flex;flex-direction:column;gap:48px}
   .about-art {min-height:390px;width:100%;max-width:500px}
+  .about-art-inner {padding:32px 22px}
+  .handwritten {font-size:30px;max-width:100%;margin:0 auto 24px}
+  .oversize-flower {top:30px;right:25px;width:50px;height:50px}
   .about-copy {padding:0}
   .about-copy h2,.section-heading h2,.gallery-heading h2 {font-size:clamp(52px,10vw,76px)}
   .section-heading,.gallery-heading {display:block;margin-bottom:32px}
@@ -247,7 +250,10 @@ body.menu-open .whatsapp-float {visibility:hidden}
   .hero-stamp {width:70px;height:70px;font-size:8px}
   .hero-stamp svg {width:15px;height:15px}
   .about-art {min-height:335px}
-  .about-art-inner p {font-size:40px}
+  .about-art-inner {padding:28px 14px}
+  .handwritten {font-size:clamp(23px,7vw,29px);margin-bottom:20px}
+  .about-art-inner p {font-size:clamp(33px,10vw,40px)}
+  .oversize-flower {top:23px;right:18px;width:39px;height:39px}
   .product-grid {grid-template-columns:1fr}
   .product-image {height:410px;max-height:113vw}
   .product-info {padding-bottom:15px}
